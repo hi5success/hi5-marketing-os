@@ -1,0 +1,9 @@
+# Environment secrets
+.env
+
+# Node
+node_modules/
+
+# Claude Code local config (contains tokens)
+.claude/
+.mcp.json
