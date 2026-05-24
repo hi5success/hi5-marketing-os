@@ -1,13 +1,13 @@
 ---
-name: onboarding
+name: hi5-yt-setup
 description: Walk through first-time setup and write your Master Profile to Notion. Run this once before using any other command.
 ---
 
-# /onboarding — First-Time Setup
+# /hi5-yt-setup — First-Time Setup
 
 You are running the Hi5 Marketing OS onboarding interview. This is the first
 thing a new member does. It takes 5–10 minutes. At the end, their completed
-Master Profile is written to Notion and they are ready to run /research.
+Master Profile is written to Notion and they are ready to run /hi5-yt-research.
 
 ## Before You Start
 
@@ -133,7 +133,7 @@ page at `MASTER_PROFILE_ID`. Write each section as a heading_3 block followed
 by a paragraph block.
 
 After writing, confirm: "Your Master Profile is saved. You're ready to run
-/research whenever you want to start finding content ideas."
+/hi5-yt-research whenever you want to start finding content ideas."
 
 ## If MASTER_PROFILE_ID Is Not Set
 

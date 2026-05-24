@@ -1,9 +1,9 @@
 ---
-name: research
+name: hi5-yt-research
 description: Search YouTube by keyword or competitor channel, score keyword opportunity, generate tailored video ideas, and push them to the Notion Idea Bank. Run this whenever you want new content ideas.
 ---
 
-# /research — YouTube Intelligence
+# /hi5-yt-research — YouTube Intelligence
 
 You are running a YouTube research session for this member. By the end, a set
 of scored, tailored video ideas will be pushed to their Notion Idea Bank.
@@ -132,5 +132,5 @@ your Idea Bank, select specific ones, or make any changes first?"
 Once the member confirms, create a new row in `CONTENT_PLANNER_ID` for each
 approved idea with Status set to "Idea" and all fields populated.
 
-Confirm: "Done — [X] ideas are now in your Idea Bank in Notion. Run /plan when
+Confirm: "Done — [X] ideas are now in your Idea Bank in Notion. Run /hi5-yt-plan when
 you're ready to schedule them."

@@ -37,7 +37,7 @@ You can find each Notion ID by opening the page, clicking **Share**, then **Copy
 
 In Claude, type:
 
-> /onboarding
+> /hi5-yt-setup
 
 Claude will walk you through a short setup process — about 5–10 minutes — and save your personal profile to Notion. You only need to do this once.
 
@@ -47,10 +47,10 @@ Claude will walk you through a short setup process — about 5–10 minutes — 
 
 | Command | What It Does |
 |---|---|
-| **/onboarding** | First-time setup — builds your Master Profile in Notion |
-| **/research** | Researches YouTube keywords or competitor channels and generates video ideas |
-| **/plan** | Runs your monthly planning session and builds your Content Calendar |
-| **/script** | Writes a video script or outline in your voice for a scheduled video |
+| **/hi5-yt-setup** | First-time setup — builds your Master Profile in Notion |
+| **/hi5-yt-research** | Researches YouTube keywords or competitor channels and generates video ideas |
+| **/hi5-yt-plan** | Runs your monthly planning session and builds your Content Calendar |
+| **/hi5-yt-script** | Writes a video script or outline in your voice for a scheduled video |
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: hi5-marketing-os
 description: >
-  Use this skill when the user runs /onboarding, /research, /plan, or /script,
+  Use this skill when the user runs /hi5-yt-setup, /hi5-yt-research, /hi5-yt-plan, or /hi5-yt-script,
   or asks anything related to YouTube content strategy, keyword research,
   competitor analysis, content planning, or video scripting. This skill gives
   Claude full context on how the Hi5 Marketing OS works and what it does in
@@ -41,7 +41,7 @@ data-driven system. Everything you do saves to their Notion workspace.
 6. Google Trends requires no API key. Use it freely for trend scoring.
 
 7. Never create Notion pages from scratch. Always write into the pre-existing
-   templated pages and databases the member set up during onboarding.
+   templated pages and databases the member set up during /hi5-yt-setup.
 
 ## Claude Project Instructions
 
@@ -62,7 +62,7 @@ The member's Notion workspace has:
 
 - **Content Planner** — one database. Every video (idea, scheduled, published)
   is a row. Key date fields: Publish Date and Edit Due Date. Both are plain
-  date fields — no Notion formulas. During /plan, set Publish Date to the
+  date fields — no Notion formulas. During /hi5-yt-plan, set Publish Date to the
   member's chosen date and set Edit Due Date to 7 days before Publish Date.
   Calculate this yourself and write both values explicitly.
 
@@ -87,20 +87,20 @@ Parse the heading_3 + paragraph block pairs. The key sections are:
 
 ## Command Overview
 
-**/onboarding** — First-time setup. Walks the member through a conversational
+**/hi5-yt-setup** — First-time setup. Walks the member through a conversational
 interview, then writes their completed Master Profile to Notion. Only needs to
 be run once.
 
-**/research** — YouTube intelligence. Takes a keyword or uses competitor
+**/hi5-yt-research** — YouTube intelligence. Takes a keyword or uses competitor
 channel IDs from the Master Profile. Searches YouTube via the Data API, scores
 keywords using Google Trends, generates tailored video ideas, and pushes them
 to the Notion Idea Bank.
 
-**/plan** — Monthly planning session. Reviews the Idea Bank with the member,
+**/hi5-yt-plan** — Monthly planning session. Reviews the Idea Bank with the member,
 helps them select and approve videos, assigns publish dates based on their
 posting schedule, and builds the Content Calendar in Notion. Calculates Edit
 Due Date as 7 days before each Publish Date and writes both fields explicitly.
 
-**/script** — Script writing. Takes a specific video from the Content Calendar,
+**/hi5-yt-script** — Script writing. Takes a specific video from the Content Calendar,
 reads the member's Voice Card, and writes a script or outline in their voice.
 Pushes the output to the video's Notion page.

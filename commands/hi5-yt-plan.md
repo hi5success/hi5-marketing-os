@@ -1,9 +1,9 @@
 ---
-name: plan
+name: hi5-yt-plan
 description: Run your monthly planning session — review your Idea Bank, select and approve videos, assign publish dates, and build your Notion Content Calendar.
 ---
 
-# /plan — Monthly Planning Session
+# /hi5-yt-plan — Monthly Planning Session
 
 You are running a monthly planning session. By the end, the member will have
 an approved set of videos scheduled in their Notion Content Calendar with
@@ -23,7 +23,7 @@ Query `CONTENT_PLANNER_ID` for all rows where Status = "Idea". For each idea,
 retrieve: Title, Hook / Angle, Target Keyword, Content Category, Goal, Trend
 Score, Source.
 
-If the Idea Bank is empty, say: "Your Idea Bank is empty — run /research first
+If the Idea Bank is empty, say: "Your Idea Bank is empty — run /hi5-yt-research first
 to generate ideas before planning."
 
 ## Step 3 — Present the Idea Bank
@@ -51,7 +51,7 @@ selected [Y] videos. Does that work, or do you want to adjust?"
 
 If they have more ideas than slots, ask which to prioritize or defer.
 If they have fewer ideas than slots, note the open slots and ask if they want
-to run /research to fill them before scheduling.
+to run /hi5-yt-research to fill them before scheduling.
 
 Once the lineup is set, present a draft schedule:
 
@@ -89,4 +89,4 @@ Write each row one at a time and confirm as you go. After all rows are updated:
 Display the final schedule as a clean table with Title, Publish Date, Edit Due
 Date, and Content Category.
 
-"Run /script any time you're ready to write a script for one of these videos."
+"Run /hi5-yt-script any time you're ready to write a script for one of these videos."

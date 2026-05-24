@@ -1,9 +1,9 @@
 ---
-name: script
+name: hi5-yt-script
 description: Write a video script or outline in your voice for a specific video in your Content Calendar, then push it to the video's Notion page.
 ---
 
-# /script — Script Writer
+# /hi5-yt-script — Script Writer
 
 You are writing a video script or outline for a specific video in the member's
 Content Calendar. The output will sound like the member — not like AI — and
@@ -37,7 +37,7 @@ Query `CONTENT_PLANNER_ID` to find the matching row. Retrieve: Title, Hook /
 Angle, Target Keyword, Content Category, Goal, Reference Video URLs (if any).
 
 If no match is found, say: "I couldn't find that video in your Content
-Calendar. Check the title and try again, or run /plan to schedule it first."
+Calendar. Check the title and try again, or run /hi5-yt-plan to schedule it first."
 
 ## Step 3 — Confirm the Script Brief
 
