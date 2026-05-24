@@ -1,22 +1,5 @@
 {
   "name": "hi5-marketing-os",
-  "version": "0.1.0",
-  "description": "Hi5 Marketing OS — YouTube Content Intelligence MCP Plugin",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "@notionhq/client": "^2.2.15",
-    "youtube-transcript": "^1.2.1",
-    "google-trends-api": "^4.9.2",
-    "axios": "^1.7.9",
-    "googleapis": "^144.0.0",
-    "dotenv": "^16.4.5"
-  }
+  "version": "1.0.0",
+  "description": "Hi5 Marketing OS — YouTube content intelligence and planning plugin for Claude"
 }

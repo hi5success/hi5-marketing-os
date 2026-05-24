@@ -7,61 +7,50 @@ Hi5 Marketing OS is a plugin for Claude that turns your AI assistant into a full
 ## What You Need Before Starting
 
 - **Claude paid plan** — Claude Pro or higher at claude.ai
-- **Node.js 18 or newer** — free download at [nodejs.org](https://nodejs.org)
-- **Free Notion account** — at [notion.so](https://www.notion.so)
-- **Free YouTube Data API key** — from [Google Cloud Console](https://console.cloud.google.com) (no credit card required for the free tier)
+- **Notion account** — free at [notion.so](https://www.notion.so)
+- **YouTube Data API key** — free from [Google Cloud Console](https://console.cloud.google.com) (no credit card required for the free tier)
+
+No Node.js. No local setup. No terminal.
 
 ---
 
-## How to Set It Up (5 Steps)
+## How to Install (3 Steps)
 
-**Step 1 — Download the project**
+**Step 1 — Add the plugin in Claude Cowork**
 
-Click the green "Code" button at the top of this page and choose "Download ZIP." Unzip it somewhere easy to find, like your Desktop.
+In Claude, open your Project settings and go to **Plugins**. Click **Add from GitHub** and paste in this repository URL. Claude will detect the plugin automatically.
 
-**Step 2 — Install the required files**
+**Step 2 — Add your keys to Project Instructions**
 
-Open Terminal (Mac) or Command Prompt (Windows), navigate to the folder you just unzipped, and run:
+In your Project settings, go to **Project Instructions** and add these four lines — filling in your own IDs and key:
 
 ```
-npm install
+MASTER_PROFILE_ID: [your Notion Master Profile page ID]
+CONTENT_PLANNER_ID: [your Notion Content Planner database ID]
+KEYWORD_TRACKER_ID: [your Notion Keyword Tracker database ID]
+YOUTUBE_API_KEY: [your YouTube Data API v3 key]
 ```
 
-This downloads everything the plugin needs to run. It takes about 30 seconds.
+You can find each Notion ID by opening the page, clicking **Share**, then **Copy Link** — the long string of characters after the last slash is the ID.
 
-**Step 3 — Add your Notion token**
-
-- In your Notion account, go to [notion.so/my-integrations](https://www.notion.so/my-integrations) and create a new integration. Copy the token it gives you.
-- In the project folder, find the file called `.env.example`. Make a copy of it and rename the copy to `.env`.
-- Open `.env` and replace `your-notion-integration-token-here` with the token you just copied.
-
-**Step 4 — Connect to Claude**
-
-In Claude, open your Project settings and add Hi5 Marketing OS as an MCP server. Point it to the `index.js` file inside the folder you downloaded. Claude will detect the plugin automatically the next time you start a conversation in that Project.
-
-**Step 5 — Run the setup interview**
+**Step 3 — Run the setup interview**
 
 In Claude, type:
 
-> Run the onboarding interview
+> /onboarding
 
-Claude will walk you through a short setup process — about 5–10 minutes — and save your personal profile to Notion. You only do this once.
+Claude will walk you through a short setup process — about 5–10 minutes — and save your personal profile to Notion. You only need to do this once.
 
 ---
 
-## What's Included
+## Commands
 
-| Tool | What It Does | Status |
-|---|---|---|
-| **Setup Interview** | Walks you through setup and builds your personal profile in Notion | ✅ Live |
-| **YouTube Research** | Searches YouTube for top-performing videos in your niche | 🔜 Coming Soon |
-| **Competitor Research** | Pulls recent videos from competitor channels you choose | 🔜 Coming Soon |
-| **Keyword Tracker** | Scores keyword competition and opportunity so you know what to target | 🔜 Coming Soon |
-| **Idea Generator** | Turns research results into video ideas tailored to your goals | 🔜 Coming Soon |
-| **Content Calendar** | Builds your posting schedule in Notion from your approved ideas | 🔜 Coming Soon |
-| **Analytics Pull** | Updates your Notion workspace with views, watch time, and CTR weekly | 🔜 Coming Soon |
-| **Trend Monitor** | Watches for trending topics in your niche and surfaces new opportunities | 🔜 Coming Soon |
-| **Script Writer** | Writes video scripts or outlines in your voice using your profile | 🔜 Coming Soon |
+| Command | What It Does |
+|---|---|
+| **/onboarding** | First-time setup — builds your Master Profile in Notion |
+| **/research** | Researches YouTube keywords or competitor channels and generates video ideas |
+| **/plan** | Runs your monthly planning session and builds your Content Calendar |
+| **/script** | Writes a video script or outline in your voice for a scheduled video |
 
 ---
 
