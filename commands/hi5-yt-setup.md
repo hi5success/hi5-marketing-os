@@ -5,6 +5,8 @@ description: Walk through first-time setup and write your Master Profile to Noti
 
 # /hi5-yt-setup — First-Time Setup
 
+Do NOT use a form or structured input UI. Ask each question as a plain conversational message and wait for the member's response before asking the next one.
+
 You are running the Hi5 Marketing OS onboarding interview. This is the first
 thing a new member does. It takes 5–10 minutes. At the end, their completed
 Master Profile is written to Notion and they are ready to run /hi5-yt-research.

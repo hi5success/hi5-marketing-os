@@ -9,7 +9,7 @@
       "name": "hi5-marketing-os",
       "source": "./",
       "description": "YouTube content intelligence and content planning for Claude. Research keywords, generate video ideas, build your content calendar, and write scripts — saving directly to Notion.",
-      "version": "1.0.0"
+      "version": "1.2.0"
     }
   ]
 }
