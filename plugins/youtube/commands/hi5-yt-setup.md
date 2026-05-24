@@ -11,12 +11,80 @@ You are running the Hi5 Marketing OS onboarding interview. This is the first
 thing a new member does. It takes 5–10 minutes. At the end, their completed
 Master Profile is written to Notion and they are ready to run /hi5-yt-research.
 
-## Before You Start
+## Step 0 — Auto-Setup
 
-Check whether `MASTER_PROFILE_ID` is already set in the member's Claude Project
-Instructions. If it is, ask: "It looks like you already have a Master Profile
-set up. Do you want to update it, or are you starting fresh?" Wait for their
-answer before continuing.
+Check whether `MASTER_PROFILE_ID` is set in the member's Claude Project Instructions.
+
+**If MASTER_PROFILE_ID IS already set:**
+Ask: "Would you like to update your profile or start working on content?" Wait
+for their answer before continuing.
+
+**If MASTER_PROFILE_ID is NOT set:**
+Say: "I don't see a Notion workspace configured yet — let me set everything up
+for you before we start the interview."
+
+Use the Notion MCP to create the following automatically:
+
+**1. Create top-level page**
+Create a page at the root of their Notion workspace called "Hi5 Marketing OS".
+
+**2. Create Master Profile sub-page**
+Inside "Hi5 Marketing OS", create a page called "Master Profile". Capture its
+page ID — this becomes `MASTER_PROFILE_ID`.
+
+**3. Create Content Planner database**
+Inside "Hi5 Marketing OS", create a database called "Content Planner" with
+these columns:
+- Video Title (title)
+- Status (status)
+- Publish Date (date)
+- Record Date (date)
+- Edit Due Date (date)
+- Content Category (select)
+- Content Type (select)
+- Deliverable Type (select)
+- Production Style (select)
+- Goal (select)
+- Primary Platform (select)
+- Distribution (multi-select)
+- Target Keyword (rich_text)
+- Source (select)
+- Trend Score (select)
+- Assigned To (people)
+- Asset Folder URL (url)
+- Export / Deliverables URL (url)
+- YouTube URL (url)
+- Thumbnail URL (url)
+- Views Total (number)
+- Views Last 7 Days (number)
+- Click-Through Rate % (number)
+- Watch Time Avg % (number)
+- Top Traffic Source (rich_text)
+- Performance Tier (select)
+- Repurpose Status (select)
+- Last Analytics Pull (date)
+
+Capture its database ID — this becomes `CONTENT_PLANNER_ID`.
+
+**4. Create Keyword Tracker database**
+Inside "Hi5 Marketing OS", create a database called "Keyword Tracker" with
+these columns:
+- Keyword (title)
+- Status (select)
+- Google Trends Score (number)
+- Trend Direction (select)
+- YouTube Video Count (number)
+- Avg Views Top 10 (number)
+- Competition Level (select)
+- Opportunity Score (select)
+- Last Updated (date)
+- Notes (rich_text)
+
+Capture its database ID — this becomes `KEYWORD_TRACKER_ID`.
+
+Say: "Your Notion workspace is ready. Now let's build your profile."
+
+Then proceed with the Interview Flow below.
 
 ## Interview Flow
 
@@ -153,16 +221,14 @@ by a paragraph block.
 After writing, confirm: "Your Master Profile is saved. You're ready to run
 /hi5-yt-research whenever you want to start finding content ideas."
 
-## If MASTER_PROFILE_ID Is Not Set
-
-After writing, remind them: "One last thing — open your Claude Project settings,
-go to Project Instructions, and add these lines:
+Then remind them: "One last thing — open your Claude Project settings, go to
+Project Instructions, and add these four lines:
 
 ```
-MASTER_PROFILE_ID: [the page ID you just wrote to]
-CONTENT_PLANNER_ID: [your Content Planner database ID]
-KEYWORD_TRACKER_ID: [your Keyword Tracker database ID]
-YOUTUBE_API_KEY: [your YouTube Data API key]
+MASTER_PROFILE_ID: [the page ID from setup]
+CONTENT_PLANNER_ID: [the database ID from setup]
+KEYWORD_TRACKER_ID: [the database ID from setup]
+YOUTUBE_API_KEY: [your YouTube Data API v3 key]
 ```
 
 If you have a second or third channel, add their profile IDs as optional fields:

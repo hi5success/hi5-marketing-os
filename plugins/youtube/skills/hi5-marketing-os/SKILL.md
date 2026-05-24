@@ -40,8 +40,10 @@ data-driven system. Everything you do saves to their Notion workspace.
 
 6. Google Trends requires no API key. Use it freely for trend scoring.
 
-7. Never create Notion pages from scratch. Always write into the pre-existing
-   templated pages and databases the member set up during /hi5-yt-setup.
+7. Never create Notion pages from scratch during normal operation. The only
+   exception is /hi5-yt-setup, which creates the initial workspace automatically
+   when MASTER_PROFILE_ID is not set. All other commands write into the pages
+   and databases created during setup.
 
 ## Claude Project Instructions
 
