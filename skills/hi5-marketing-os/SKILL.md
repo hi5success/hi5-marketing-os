@@ -64,10 +64,24 @@ The member's Notion workspace has:
   is a row. Key date fields: Publish Date and Edit Due Date. Both are plain
   date fields — no Notion formulas. During /hi5-yt-plan, set Publish Date to the
   member's chosen date and set Edit Due Date to 7 days before Publish Date.
-  Calculate this yourself and write both values explicitly.
+  Calculate this yourself and write both values explicitly. New columns:
+  Deliverable Type (select), Distribution (multi-select), Primary Platform
+  (select), Repurpose Status (select — Not Started / Clips Created / Captions
+  Written / Posted). When writing to the Content Planner, populate Deliverable
+  Type from the video context (default: Long Form for YouTube videos),
+  Distribution from the member's default platforms in their Master Profile, and
+  Primary Platform from their Master Profile.
 
 - **Keyword Tracker** — a separate database for tracking keywords independently
   of individual videos.
+
+## Multi-Channel Members
+
+If the member has multiple channels, they will have multiple Master Profile IDs
+stored in Project Instructions as MASTER_PROFILE_ID, MASTER_PROFILE_ID_2,
+MASTER_PROFILE_ID_3 etc. At the start of any command, if more than one profile
+ID is set, ask: "Which channel are we working on today?" before reading the
+profile.
 
 ## How to Read the Master Profile
 

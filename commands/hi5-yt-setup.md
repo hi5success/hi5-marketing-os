@@ -20,6 +20,8 @@ answer before continuing.
 
 ## Interview Flow
 
+IMPORTANT: Ask every question as a plain conversational message one at a time. Never use a structured form or elicitation UI. Wait for the member's response before asking the next question.
+
 Ask one question at a time. Wait for the answer before asking the next. Do not
 present the full list upfront.
 
@@ -62,6 +64,13 @@ Which fits you best, or is it somewhere in between?"
 
 **8. Posting frequency**
 "How often do you plan to post? For example: once a week, 3x per week, daily."
+
+**8a. Multiple channels**
+"Do you run multiple YouTube channels? If yes, how many and what is each one
+focused on? Each channel will get its own Master Profile."
+
+If they say yes: complete the full interview once per channel and write a
+separate Master Profile page for each.
 
 **9. Recording schedule**
 "How do you typically record — do you batch record several videos in one
@@ -113,7 +122,7 @@ match your voice when writing content."
 - "Are there any phrases or words you'd never say — things that would sound
   off-brand for you?" *(skippable)*
 
-**15. Operator preferences** *(3 quick questions)*
+**15. Operator preferences** *(6 quick questions)*
 "Last section — this tells me how you like to work."
 
 - "When I give you output, do you prefer **bullets** or **prose**?"
@@ -121,6 +130,13 @@ match your voice when writing content."
   key points?"
 - "When I give recommendations: one strong recommendation, or a few options to
   choose from?"
+- "What platforms do you typically distribute your content to? Select all that
+  apply: YouTube, Instagram, TikTok, Facebook, LinkedIn, X, Threads, Google
+  Business Profile, Podcast. This becomes your default Distribution setting."
+- "What type of content do you primarily create? Long Form video, Short Form,
+  Blog, Podcast, or a mix?" *(sets default Deliverable Type)*
+- "What is your primary platform — the main place you build your audience?"
+  *(sets Primary Platform)*
 
 ## After Collecting All Answers
 
@@ -147,6 +163,13 @@ MASTER_PROFILE_ID: [the page ID you just wrote to]
 CONTENT_PLANNER_ID: [your Content Planner database ID]
 KEYWORD_TRACKER_ID: [your Keyword Tracker database ID]
 YOUTUBE_API_KEY: [your YouTube Data API key]
+```
+
+If you have a second or third channel, add their profile IDs as optional fields:
+
+```
+MASTER_PROFILE_ID_2: [second channel Master Profile page ID]
+MASTER_PROFILE_ID_3: [third channel Master Profile page ID]
 ```
 
 You can find the Notion IDs by opening each page, clicking Share, then Copy
