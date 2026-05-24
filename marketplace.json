@@ -6,10 +6,31 @@
   },
   "plugins": [
     {
-      "name": "hi5-marketing-os",
-      "source": "./",
-      "description": "YouTube content intelligence and content planning for Claude. Research keywords, generate video ideas, build your content calendar, and write scripts — saving directly to Notion.",
-      "version": "1.3.0"
+      "name": "hi5-youtube",
+      "source": "./plugins/youtube",
+      "description": "YouTube content intelligence for Hi5 Marketing OS. Research keywords, generate video ideas, build your content calendar, and write scripts — saving directly to Notion.",
+      "version": "1.4.0"
+    },
+    {
+      "name": "hi5-repurpose",
+      "source": "./plugins/repurpose",
+      "description": "Coming soon — content repurposing tools for Hi5 Marketing OS.",
+      "version": "0.0.0",
+      "status": "coming_soon"
+    },
+    {
+      "name": "hi5-ghl",
+      "source": "./plugins/ghl",
+      "description": "Coming soon — GoHighLevel integration for Hi5 Marketing OS.",
+      "version": "0.0.0",
+      "status": "coming_soon"
+    },
+    {
+      "name": "hi5-social",
+      "source": "./plugins/social",
+      "description": "Coming soon — social media tools for Hi5 Marketing OS.",
+      "version": "0.0.0",
+      "status": "coming_soon"
     }
   ]
 }
