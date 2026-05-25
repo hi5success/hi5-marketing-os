@@ -1,36 +1,20 @@
 {
-  "name": "Hi5 Marketing OS",
-  "owner": {
-    "name": "Hi5 Success",
-    "url": "https://hi5success.com"
+  "metadata": {
+    "pluginRoot": "./plugins"
   },
   "plugins": [
     {
       "name": "hi5-youtube",
-      "source": "./plugins/youtube",
-      "description": "YouTube content intelligence for Hi5 Marketing OS. Research keywords, generate video ideas, build your content calendar, and write scripts — saving directly to Notion.",
-      "version": "1.7.0"
-    },
-    {
-      "name": "hi5-repurpose",
-      "source": "./plugins/repurpose",
-      "description": "Coming soon — content repurposing tools for Hi5 Marketing OS.",
-      "version": "0.0.0",
-      "status": "coming_soon"
-    },
-    {
-      "name": "hi5-ghl",
-      "source": "./plugins/ghl",
-      "description": "Coming soon — GoHighLevel integration for Hi5 Marketing OS.",
-      "version": "0.0.0",
-      "status": "coming_soon"
-    },
-    {
-      "name": "hi5-social",
-      "source": "./plugins/social",
-      "description": "Coming soon — social media tools for Hi5 Marketing OS.",
-      "version": "0.0.0",
-      "status": "coming_soon"
+      "source": "youtube",
+      "description": "YouTube content intelligence and planning for Claude.",
+      "version": "1.8.0",
+      "skills": [
+        "./skills/hi5-context",
+        "./skills/hi5-yt-setup",
+        "./skills/hi5-yt-research",
+        "./skills/hi5-yt-plan",
+        "./skills/hi5-yt-script"
+      ]
     }
   ]
 }

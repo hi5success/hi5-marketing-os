@@ -1,5 +1,5 @@
 ---
-name: hi5-marketing-os
+name: hi5-context
 description: >
   Use this skill when the user runs /hi5-yt-setup, /hi5-yt-research, /hi5-yt-plan, or /hi5-yt-script,
   or asks anything related to YouTube content strategy, keyword research,
