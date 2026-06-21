@@ -1,12 +1,6 @@
 {
-  "name": "hi5-youtube",
+  "name": "youtube",
+  "description": "YouTube content intelligence and planning. Research competitors, plan content, write scripts, and manage your Content Planner in Notion.",
   "version": "1.0.0",
-  "description": "YouTube content intelligence and planning for Hi5 Marketing OS.",
-  "skills": [
-    "./skills/hi5-context",
-    "./skills/hi5-yt-setup",
-    "./skills/hi5-yt-research",
-    "./skills/hi5-yt-plan",
-    "./skills/hi5-yt-script"
-  ]
+  "author": { "name": "Hi5 Success" }
 }
