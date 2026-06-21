@@ -6,12 +6,12 @@
   },
   "plugins": [
     {
-      "name": "youtube",
-      "source": "./plugins/youtube",
-      "description": "YouTube content intelligence and planning. Research competitors, plan content, write scripts, and manage your Content Planner in Notion.",
+      "name": "content-os",
+      "source": "./plugins/content-os",
+      "description": "YouTube-first content creation and repurposing system. Research competitors, plan content, write scripts, repurpose into blog posts, and generate platform-specific social captions — all from one content engine.",
       "version": "1.0.0",
       "author": { "name": "Hi5 Success" },
-      "keywords": ["youtube", "content", "marketing", "notion", "seo", "scripts", "real estate", "ghl"]
+      "keywords": ["youtube", "content", "blog", "social media", "repurpose", "marketing", "notion", "real estate", "captions", "scripts"]
     },
     {
       "name": "business-os",
@@ -20,14 +20,6 @@
       "version": "1.0.0",
       "author": { "name": "Hi5 Success" },
       "keywords": ["business", "planning", "goals", "strategy", "notion", "entrepreneur"]
-    },
-    {
-      "name": "content-os",
-      "source": "./plugins/content-os",
-      "description": "Content repurposing, blog writing, and social media tools to maximize reach from every piece of content.",
-      "version": "1.0.0",
-      "author": { "name": "Hi5 Success" },
-      "keywords": ["content", "repurpose", "blog", "social", "instagram", "tiktok", "notion"]
     },
     {
       "name": "marketing-os",

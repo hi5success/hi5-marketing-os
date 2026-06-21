@@ -1,11 +1,77 @@
 ---
 name: hi5-social
-description: >
-  Social media content writer. Generates platform-native posts for Instagram,
-  Facebook, TikTok, and X from a source piece of content. Adapts tone and
-  format for each platform using the member's voice card.
+description: Generates platform-specific social media captions for Instagram, Facebook, TikTok, LinkedIn, and email from any content piece. Tailors tone, length, and format to each platform and the member's brand voice. Triggers when the user runs /hi5-social, says "write captions", "social media posts", "write my captions", or "post this to social".
 ---
 
-# Hi5 Social
+# Hi5 Social — Social Caption Generator
 
-*Coming soon.*
+## Purpose
+Turn any content into platform-ready captions. Each platform gets its own version — not the same caption copy-pasted everywhere.
+
+## Core Rules
+- Read Master Profile for brand voice, platforms, and style
+- Read behavioral style from /hi5-self for tone
+- Never write the same caption for multiple platforms
+- Always include a CTA appropriate for the platform
+- Save all outputs to Notion Content Planner
+
+---
+
+## OPENING
+
+> "Let's get your content ready to post. What are we working with?"
+>
+> A) A YouTube script or video topic
+> B) A blog post
+> C) Repurposed content snippets from /hi5-repurpose
+> D) A fresh topic or idea I want to post about
+
+---
+
+## PLATFORM DETECTION
+
+Check Master Profile for PROFILE.social_platforms.
+Only generate captions for platforms they are active on.
+Ask if they want all platforms or specific ones.
+
+---
+
+## OUTPUT BY PLATFORM
+
+### Instagram
+- Hook in first line (stops the scroll)
+- 150-300 words
+- Conversational and personal
+- 5-10 relevant hashtags
+- CTA: comment, save, DM, or link in bio
+
+### Facebook
+- Longer form — 200-400 words
+- Community-focused tone
+- Story or value-first
+- CTA: comment or share
+
+### TikTok
+- Hook line only (first 3 seconds script)
+- 50-100 words
+- High energy, direct, trend-aware
+- CTA: follow or comment
+
+### LinkedIn
+- Professional but personal
+- 150-300 words
+- Insight or lesson-forward
+- CTA: connect or comment
+
+### Email Subject Lines (3 versions)
+- Curiosity-driven
+- Benefit-driven
+- Direct/bold
+
+---
+
+## STORAGE
+
+Save all captions to Notion Content Planner linked to the content piece.
+
+> "All captions are saved to your Content Planner. Everything is ready to copy and post. Want to schedule these out? Add your posting dates directly in Notion and your Content Planner will track everything."
