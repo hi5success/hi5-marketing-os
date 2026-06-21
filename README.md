@@ -1,6 +1,6 @@
-# Hi5 Marketing OS
+# Hi5 Success OS
 
-Hi5 Marketing OS is a plugin for Claude that turns your AI assistant into a full YouTube content engine — without any extra tools or subscriptions. Connect it once, and Claude can research trending videos in your niche, generate content ideas tailored to your goals, build your content calendar in Notion, write scripts in your voice, and track your analytics — all from a single conversation. Everything saves directly to your own Notion workspace, so you always own your data.
+Hi5 Success OS is a plugin for Claude that turns your AI assistant into a full YouTube content engine — without any extra tools or subscriptions. Connect it once, and Claude can research trending videos in your niche, generate content ideas tailored to your goals, build your content calendar in Notion, write scripts in your voice, and track your analytics — all from a single conversation. Everything saves directly to your own Notion workspace, so you always own your data.
 
 ---
 
