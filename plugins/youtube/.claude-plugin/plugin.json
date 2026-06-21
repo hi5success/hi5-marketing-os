@@ -1,0 +1,12 @@
+{
+  "name": "hi5-youtube",
+  "version": "1.0.0",
+  "description": "YouTube content intelligence and planning for Hi5 Marketing OS.",
+  "skills": [
+    "./skills/hi5-context",
+    "./skills/hi5-yt-setup",
+    "./skills/hi5-yt-research",
+    "./skills/hi5-yt-plan",
+    "./skills/hi5-yt-script"
+  ]
+}
