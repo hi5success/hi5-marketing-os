@@ -15,15 +15,9 @@ jobs:
       - name: Validate SKILL.md frontmatter
         shell: bash
         run: |
-          SKILLS_DIR="plugins/youtube/skills"
           ERRORS=()
 
-          if [ ! -d "$SKILLS_DIR" ]; then
-            echo "ERROR: $SKILLS_DIR directory not found"
-            exit 1
-          fi
-
-          for skill_dir in "$SKILLS_DIR"/*/; do
+          for skill_dir in plugins/*/skills/*/; do
             skill_name=$(basename "$skill_dir")
             skill_file="$skill_dir/SKILL.md"
 
